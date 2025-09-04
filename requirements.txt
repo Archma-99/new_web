@@ -1,0 +1,7 @@
+# This file specifies project dependencies.
+
+# The 'curses' library is standard on Linux and macOS, but not on Windows.
+# The 'windows-curses' library provides a port for Windows systems.
+# The following line uses an environment marker to ensure this dependency
+# is only installed on Windows.
+windows-curses ; sys_platform == "win32"
